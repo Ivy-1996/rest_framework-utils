@@ -35,3 +35,7 @@ class ApiView(DefaultResponse, BaseView, mixin.ApiViewMinxin, views.APIView):
 
 class ModelViewSet(DefaultResponse, BaseView, mixin.ViewSetMixIn, viewsets.ModelViewSet):
     pass
+
+
+def exception_handler(exc, context):
+    pass

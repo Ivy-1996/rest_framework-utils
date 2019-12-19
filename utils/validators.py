@@ -14,6 +14,7 @@ class PhonenumValidator(BaseValidator):
         return not ext.is_legal_phone(a)
 
 
+# 序列化器的手机号码验证使用
 def phonenum_validator(value):
     if not ext.is_legal_phone(value):
         raise ValidationError({'phonenum': ['手机号码格式不正确']})
