@@ -120,5 +120,7 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     # 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_PAGINATION_CLASS': 'utils.pagination.Pagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    'DEFAULT_EXCEPTION_HANDLE_CLASS': 'utils.views.DefaultExceptionHandle',
+    'EXCEPTION_HANDLER': 'utils.views.exception_handler'
 }
