@@ -2,6 +2,7 @@ setup.py
 rest_frameworkutils.egg-info/PKG-INFO
 rest_frameworkutils.egg-info/SOURCES.txt
 rest_frameworkutils.egg-info/dependency_links.txt
+rest_frameworkutils.egg-info/requires.txt
 rest_frameworkutils.egg-info/top_level.txt
 utils/__init__.py
 utils/context.py
