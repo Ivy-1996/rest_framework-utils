@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 
-# from utils.mixin import FilterMixIn
+# from rest_framework_utils.mixin import FilterMixIn
 from .serializers import Permission, PermissionSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter

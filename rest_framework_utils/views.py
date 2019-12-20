@@ -8,12 +8,14 @@ from rest_framework.response import Response
 from . import mixin
 from .response import DefaultResponse
 
-DRF_SETTINGS = getattr(settings, 'REST_FRAMEWORK', None)
+DRF_SETTINGS = getattr(settings, 'REST_FRAMEWORK', dict())
 
 
 ##############################################################
 # 将你的代码继承这些类,可以达到不修改原来的代码完成处理请求结果的定制化 #
 ##############################################################
+
+
 
 class APIView(DefaultResponse, mixin.ApiViewMinxin, views.APIView):
     pass

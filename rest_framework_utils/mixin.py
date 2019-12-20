@@ -1,4 +1,4 @@
-# from django_filters.utils import get_all_model_fields
+# from django_filters.rest_framework_utils import get_all_model_fields
 
 ALL_FIELDS = '__all__'
 

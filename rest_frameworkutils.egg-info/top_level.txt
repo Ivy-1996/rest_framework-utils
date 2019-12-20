@@ -1,1 +1,1 @@
-utils
+rest_framework_utils

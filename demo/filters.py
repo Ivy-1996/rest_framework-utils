@@ -1,4 +1,4 @@
-# from utils.filter import FilterSet
+# from rest_framework_utils.filter import FilterSet
 from django.contrib.auth.models import Permission
 from django_filters import FilterSet
 
