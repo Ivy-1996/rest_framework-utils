@@ -1,8 +1,3 @@
-from rest_framework.utils.serializer_helpers import ReturnDict
-
-ALL_FIELDS = '__all__'
-
-
 class ApiViewMinxin:
     def dispatch(self, request, *args, **kwargs):
         response = super(ApiViewMinxin, self).dispatch(request, *args, **kwargs)
@@ -29,14 +24,3 @@ class ViewSetMixIn(ApiViewMinxin):
     def process_key(self, request):
         # 将关键字转换为`action`
         return self.action
-
-
-class SerializerMixIn:
-
-    @property
-    def data(self):
-        # 可在在Meta属性里面定义data对象,该对象支付覆盖原始的data,用于自定义返回应答
-        result = getattr(self.Meta, 'data', None)
-        response = ReturnDict(result, serializer=self) if result else super(SerializerMixIn, self).data()
-        return response
-

@@ -17,7 +17,7 @@ setup(
         'certifi==2019.11.28',
         'chardet==3.0.4',
         'crcmod==1.7',
-        'Django==2.1.5',
+        'Django>2.0.0',
         'django-filter==2.2.0',
         'djangorestframework==3.11.0',
         'idna==2.8',

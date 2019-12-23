@@ -1,5 +1,6 @@
 setup.py
 rest_framework_utils/__init__.py
+rest_framework_utils/auth.py
 rest_framework_utils/context.py
 rest_framework_utils/db.py
 rest_framework_utils/exceptions.py

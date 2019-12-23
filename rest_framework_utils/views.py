@@ -16,7 +16,6 @@ DRF_SETTINGS = getattr(settings, 'REST_FRAMEWORK', dict())
 ##############################################################
 
 
-
 class APIView(DefaultResponse, mixin.ApiViewMinxin, views.APIView):
     pass
 

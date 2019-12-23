@@ -124,3 +124,5 @@ REST_FRAMEWORK = {
     'DEFAULT_EXCEPTION_HANDLE_CLASS': 'rest_framework_utils.views.DefaultExceptionHandle',
     'EXCEPTION_HANDLER': 'rest_framework_utils.views.exception_handler'
 }
+
+TOKEN_EXPIRE_IN = 60 * 60 * 24 * 2
