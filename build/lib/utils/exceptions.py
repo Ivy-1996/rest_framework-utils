@@ -1,2 +1,0 @@
-class OssOssStroageSaveFailError(Exception):
-    pass
